@@ -169,7 +169,7 @@ describe('Authentication reducer tests', () => {
           type: getAccount.fulfilled.type,
           payload: resolvedObject,
         },
-        updateLocale('en'),
+        updateLocale('fr'),
       ];
       await store.dispatch(getSession());
       expect(store.getActions()[0]).toMatchObject(expectedActions[0]);
